@@ -1,5 +1,7 @@
 # Imagen base oficial de n8n
-FROM n8nio/n8n:latest
+FROM node:18
+
+RUN npm install -g n8n
 
 # Directorio de trabajo
 WORKDIR /data
